@@ -1,15 +1,15 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { EditComponent } from './edit/edit.component';
-import { ListComponent } from './list/list.component';
 import { NgModule } from '@angular/core';
+import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
+import { ShoppingListComponent } from './shopping-list.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'edit', component: EditComponent },
-      { path: 'list', component: ListComponent },
+      { path: 'edit', component: ShoppingEditComponent },
+      { path: 'list', component: ShoppingListComponent },
       { path: '', pathMatch: 'full', redirectTo: 'list' }
     ]
   }

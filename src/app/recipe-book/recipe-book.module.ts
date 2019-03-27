@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgModule } from '@angular/core';
 import { RecipeBookRoutingModule } from './recipe-book-routing.module';
-import { ListComponent } from './list/list.component';
-import { ItemComponent } from './item/item.component';
-import { DetailComponent } from './detail/detail.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
 
 @NgModule({
-  declarations: [ListComponent, ItemComponent, DetailComponent],
+  declarations: [
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    RecipeListComponent
+  ],
   imports: [
     CommonModule,
     RecipeBookRoutingModule
